@@ -20,7 +20,9 @@ function App() {
 
   return (
     <center>
+    <h1 className='text-white text-[2rem] pt-[100px]'>Add Your Skills</h1>
     <div className='flex justify-center items-center w-[100%] h-[500px]'>
+    
     {skillArr.map((data,i)=>{
      return <div className='w-[100]'>
      <p key={i} className='mr-5 text-white'>{data}<span className=' bg-red-500 px-2 py-1 rounded-full text-white cursor-pointer text-[0.60rem] ml-2' onClick={()=>handleRemoveItemFromArr(data)}>X</span></p>
